@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WWMPRQJ8');</script>
-<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preparing for IELTS Exam</title>
@@ -15,7 +8,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Condiment&display=swap" rel="stylesheet">
 <style>
-  /* ===== Color system (Orbis.Nft-inspired dark space theme) ===== */
   :root{
     --bg:#010828;
     --cream:#EFF4FF;
@@ -47,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ::selection{ background:var(--neon); color:var(--bg); }
   a{ color:inherit; text-decoration:none; }
 
-  /* ===== Liquid glass effect ===== */
+  /* -------- Liquid glass -------- */
   .liquid-glass{
     background: rgba(255,255,255,0.01);
     background-blend-mode: luminosity;
@@ -74,7 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     pointer-events:none;
   }
 
-  /* ===== Texture overlay ===== */
+  /* -------- Texture overlay -------- */
   .texture-overlay{
     position:fixed;
     inset:0;
@@ -86,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     opacity:0.4;
   }
 
-  /* ===== Page router ===== */
+  /* -------- App router -------- */
   .page{
     display:none;
     min-height:100vh;
@@ -101,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .page{ animation:none !important; transition:none !important; }
   }
 
-  /* ===== Page: Landing ===== */
+  /* -------- Page: Landing -------- */
   #page-landing{
     position:relative;
     overflow:hidden;
@@ -133,7 +125,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     color:var(--cream);
     margin-bottom:60px;
   }
-  .landing-logo span{ color:var(--neon); }
+  .landing-logo span{
+    color:var(--neon);
+  }
   .landing-eyebrow{
     font-family:var(--font-accent);
     font-size:clamp(28px,6vw,56px);
@@ -229,7 +223,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .social-btn:hover{ background:rgba(255,255,255,0.12); }
   .social-btn svg{ width:22px; height:22px; color:var(--cream); position:relative; z-index:1; }
 
-  /* ===== Page: Section picker ===== */
+  /* -------- Page: Section picker -------- */
   #page-sections{
     min-height:100vh;
     padding:60px 24px;
@@ -278,7 +272,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     transform:translateY(-4px);
     box-shadow:0 8px 32px rgba(102,255,0,0.12);
   }
-  .section-card-bg{ position:absolute; inset:0; background:var(--bg); z-index:0; }
+  .section-card-bg{
+    position:absolute;
+    inset:0;
+    background:var(--bg);
+    z-index:0;
+  }
   .section-card-content{
     position:relative;
     z-index:1;
@@ -340,7 +339,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .section-card-arrow svg{ width:18px; height:18px; }
 
-  /* ===== Page: Reading ===== */
+  /* -------- Page: Reading -------- */
   #page-reading{
     min-height:100vh;
     padding:40px 24px 80px;
@@ -358,10 +357,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform:uppercase;
     color:var(--cream-soft);
   }
-  .reading-breadcrumb a{ color:var(--cream-soft); transition:color .2s ease; }
+  .reading-breadcrumb a{
+    color:var(--cream-soft);
+    transition:color .2s ease;
+  }
   .reading-breadcrumb a:hover{ color:var(--neon); }
-  .reading-breadcrumb span.current{ color:var(--neon); }
-  .reading-header{ margin-bottom:32px; }
+  .reading-breadcrumb span.current{
+    color:var(--neon);
+  }
+  .reading-header{
+    margin-bottom:32px;
+  }
   .reading-header h1{
     font-family:var(--font-heading);
     font-size:clamp(28px,3.5vw,44px);
@@ -395,7 +401,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     align-items:start;
   }
   @media (max-width:900px){
-    .reading-layout{ grid-template-columns:1fr; }
+    .reading-layout{
+      grid-template-columns:1fr;
+    }
   }
   .passage-panel{
     background:rgba(255,255,255,0.03);
@@ -661,6 +669,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing:0.06em;
     text-transform:uppercase;
   }
+
   .countries-grid{
     display:grid;
     grid-template-columns:repeat(5, 1fr);
@@ -689,7 +698,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform:uppercase;
     letter-spacing:0.08em;
   }
-  @media (max-width:768px){ .countries-grid{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:768px){
+    .countries-grid{ grid-template-columns:repeat(3,1fr); }
+  }
+
   .headings-grid{
     display:flex;
     flex-wrap:wrap;
@@ -714,7 +726,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-size:14px;
   }
 
-  /* ===== Page: Writing ===== */
+  /* -------- Page: Writing -------- */
   #page-writing{
     min-height:100vh;
     padding:40px 24px 80px;
@@ -732,10 +744,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform:uppercase;
     color:var(--cream-soft);
   }
-  .writing-breadcrumb a{ color:var(--cream-soft); transition:color .2s ease; }
+  .writing-breadcrumb a{
+    color:var(--cream-soft);
+    transition:color .2s ease;
+  }
   .writing-breadcrumb a:hover{ color:var(--neon); }
   .writing-breadcrumb span.current{ color:var(--neon); }
-  .writing-header{ margin-bottom:32px; }
+
+  .writing-header{
+    margin-bottom:32px;
+  }
   .writing-header h1{
     font-family:var(--font-heading);
     font-size:clamp(28px,3.5vw,44px);
@@ -762,6 +780,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     max-width:720px;
     line-height:1.6;
   }
+
   .writing-prompt-card{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
@@ -799,6 +818,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height:1.6;
     text-transform:none;
   }
+
   .writing-layout{
     display:grid;
     grid-template-columns:1fr;
@@ -839,6 +859,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .word-count-display.ok{ color:var(--neon); }
   .word-count-display.low{ color:#FF6B6B; }
+
   .writing-criteria{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -868,6 +889,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin:0;
     text-transform:none;
   }
+
   .writing-samples{
     margin-top:24px;
     border-top:1px solid rgba(255,255,255,0.08);
@@ -917,6 +939,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height:1.6;
     text-transform:none;
   }
+
   .writing-feedback{
     margin-top:26px;
     display:none;
@@ -941,7 +964,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .dot.ok{ background:var(--neon); }
   .dot.warn{ background:#FF6B6B; }
 
-  /* ===== Page: Speaking ===== */
+  /* -------- Page: Speaking -------- */
   #page-speaking{
     min-height:100vh;
     padding:40px 24px 80px;
@@ -959,10 +982,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform:uppercase;
     color:var(--cream-soft);
   }
-  .speaking-breadcrumb a{ color:var(--cream-soft); transition:color .2s ease; }
+  .speaking-breadcrumb a{
+    color:var(--cream-soft);
+    transition:color .2s ease;
+  }
   .speaking-breadcrumb a:hover{ color:var(--neon); }
   .speaking-breadcrumb span.current{ color:var(--neon); }
-  .speaking-header{ margin-bottom:32px; }
+
+  .speaking-header{
+    margin-bottom:32px;
+  }
   .speaking-header h1{
     font-family:var(--font-heading);
     font-size:clamp(28px,3.5vw,44px);
@@ -989,6 +1018,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     max-width:720px;
     line-height:1.6;
   }
+
   .speaking-layout{
     display:grid;
     grid-template-columns:1.1fr 0.9fr;
@@ -998,6 +1028,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media (max-width:900px){
     .speaking-layout{ grid-template-columns:1fr; }
   }
+
   .speaking-prompt-card{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
@@ -1027,7 +1058,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-bottom:6px;
     flex-wrap:wrap;
   }
-  .question-list{ margin-top:16px; }
+  .question-list{
+    margin-top:16px;
+  }
   .question-item{
     padding:12px 0;
     border-bottom:1px solid rgba(255,255,255,0.08);
@@ -1097,6 +1130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     color:var(--cream-soft);
     background:rgba(255,255,255,0.04);
   }
+
   .recording-wave{
     height:40px;
     display:flex;
@@ -1115,7 +1149,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background:var(--neon);
     animation:wavePulse 0.4s ease infinite alternate;
   }
-  @keyframes wavePulse{ from{ height:8px; } to{ height:32px; } }
+  @keyframes wavePulse{
+    from{ height:8px; }
+    to{ height:32px; }
+  }
+
   .rec-btn{
     font-family:var(--font-heading);
     font-size:16px;
@@ -1134,11 +1172,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     gap:10px;
     width:100%;
   }
-  .rec-btn:hover{ background:rgba(255,255,255,0.06); border-color:var(--neon); color:var(--neon); }
+  .rec-btn:hover{
+    background:rgba(255,255,255,0.06);
+    border-color:var(--neon);
+    color:var(--neon);
+  }
   .rec-btn:disabled{ opacity:0.4; cursor:not-allowed; }
   .rec-btn.recording{ border-color:#FF6B6B; color:#FF6B6B; }
   .rec-btn.recording:hover{ background:rgba(255,107,107,0.08); }
   .rec-btn svg{ width:18px; height:18px; }
+
   .speaking-ai-feedback{
     margin-top:16px;
     display:none;
@@ -1155,7 +1198,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height:1;
     margin-bottom:4px;
   }
-  .ai-band .band-num{ color:var(--neon); }
+  .ai-band .band-num{
+    color:var(--neon);
+  }
   .ai-label{
     font-family:var(--font-body);
     font-size:12px;
@@ -1200,6 +1245,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height:1.5;
     text-transform:none;
   }
+
   .speaking-helpers{
     margin-top:16px;
     border-top:1px solid rgba(255,255,255,0.08);
@@ -1231,7 +1277,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin:0;
   }
 
-  /* ===== Page: Listening ===== */
+  /* -------- Page: Listening -------- */
   #page-listening{
     min-height:100vh;
     padding:40px 24px 80px;
@@ -1249,10 +1295,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-transform:uppercase;
     color:var(--cream-soft);
   }
-  .listening-breadcrumb a{ color:var(--cream-soft); transition:color .2s ease; }
+  .listening-breadcrumb a{
+    color:var(--cream-soft);
+    transition:color .2s ease;
+  }
   .listening-breadcrumb a:hover{ color:var(--neon); }
   .listening-breadcrumb span.current{ color:var(--neon); }
-  .listening-header{ margin-bottom:32px; }
+
+  .listening-header{
+    margin-bottom:32px;
+  }
   .listening-header h1{
     font-family:var(--font-heading);
     font-size:clamp(28px,3.5vw,44px);
@@ -1279,11 +1331,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     max-width:720px;
     line-height:1.6;
   }
+
   .listening-layout{
     display:grid;
     grid-template-columns:1fr;
     gap:28px;
   }
+
   .audio-player-panel{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
@@ -1368,6 +1422,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width:80px;
     accent-color:var(--neon);
   }
+
   .listening-content-panel{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
@@ -1463,6 +1518,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .listening-question.checked input[type="text"]{ border-color:rgba(255,255,255,0.12); }
   .listening-question.checked.correct input[type="text"]{ border-color:var(--neon); }
   .listening-question.checked.incorrect input[type="text"]{ border-color:#FF6B6B; }
+
   .listening-action{
     display:flex;
     align-items:center;
@@ -1485,6 +1541,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     animation:fadeIn .3s ease;
   }
   .listening-score.show{ display:inline-block; }
+
   .listening-note{
     margin-top:16px;
     padding:12px 16px;
@@ -1525,14 +1582,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </style>
 </head>
-  <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWMPRQJ8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->  
+<body>
+
 <div class="texture-overlay"></div>
 
-<!-- ===== PAGE: LANDING ===== -->
+<!-- ==================== PAGE: LANDING ==================== -->
 <div id="page-landing" class="page active">
   <video autoplay loop muted playsinline poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%23010828' width='800' height='600'/%3E%3C/svg%3E">
     <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260331_045634_e1c98c76-1265-4f5c-882a-4276f2080894.mp4" type="video/mp4">
@@ -1557,7 +1611,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- ===== PAGE: SECTIONS ===== -->
+<!-- ==================== PAGE: SECTIONS ==================== -->
 <div id="page-sections" class="page">
   <div class="sections-header">
     <h1>Choose Your Section</h1>
@@ -1570,8 +1624,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-card-num">Section 01</div>
         <h2 class="section-card-title">General Training<br>Reading</h2>
         <div class="section-card-accent">Texts & comprehension</div>
-        <p class="section-card-desc">8 practice tasks covering every question type: Flow-chart completion, Identifying information, Matching information, Matching features, Matching headings, Multiple choice, Sentence completion, and Short-answer questions.</p>
-        <div class="section-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <p class="section-card-desc">
+          8 practice tasks covering every question type: Flow-chart completion, Identifying information, Matching information, Matching features, Matching headings, Multiple choice, Sentence completion, and Short-answer questions.
+        </p>
+        <div class="section-card-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
       </div>
     </div>
     <div class="section-card" onclick="navigate('writing')">
@@ -1580,8 +1638,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-card-num">Section 02</div>
         <h2 class="section-card-title">General Training<br>Writing</h2>
         <div class="section-card-accent">Letters & essays</div>
-        <p class="section-card-desc">Task 1 — write a letter (150+ words). Task 2 — write an essay (250+ words). Get instant word & paragraph checks plus assessment criteria and sample band-scored scripts.</p>
-        <div class="section-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <p class="section-card-desc">
+          Task 1 — write a letter (150+ words). Task 2 — write an essay (250+ words). Get instant word & paragraph checks plus assessment criteria and sample band-scored scripts.
+        </p>
+        <div class="section-card-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
       </div>
     </div>
     <div class="section-card" onclick="navigate('speaking')">
@@ -1590,8 +1652,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-card-num">Section 03</div>
         <h2 class="section-card-title">Speaking</h2>
         <div class="section-card-accent">Record & get AI feedback</div>
-        <p class="section-card-desc">Part 1 (Introduction), Part 2 (Long turn), Part 3 (Discussion). Press Start, speak your answer, then Stop — the AI evaluates your fluency, vocabulary, grammar, and coherence like an IELTS examiner.</p>
-        <div class="section-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <p class="section-card-desc">
+          Part 1 (Introduction), Part 2 (Long turn), Part 3 (Discussion). Press Start, speak your answer, then Stop — the AI evaluates your fluency, vocabulary, grammar, and coherence like an IELTS examiner.
+        </p>
+        <div class="section-card-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
       </div>
     </div>
     <div class="section-card" onclick="navigate('listening')">
@@ -1600,14 +1666,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-card-num">Section 04</div>
         <h2 class="section-card-title">Listening</h2>
         <div class="section-card-accent">Audio & comprehension</div>
-        <p class="section-card-desc">4 practice tasks with real audio recordings: Form completion, Matching, Multiple choice, and Short-answer questions. Play the audio, answer the questions, then check your answers.</p>
-        <div class="section-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <p class="section-card-desc">
+          4 practice tasks with real audio recordings: Form completion, Matching, Multiple choice, and Short-answer questions. Play the audio, answer the questions, then check your answers.
+        </p>
+        <div class="section-card-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ===== PAGE: READING ===== -->
+<!-- ==================== PAGE: READING ==================== -->
 <div id="page-reading" class="page">
   <div class="reading-breadcrumb">
     <button class="btn-back" onclick="navigate('sections')">← Back</button>
@@ -1622,7 +1692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- ===== PAGE: WRITING ===== -->
+<!-- ==================== PAGE: WRITING ==================== -->
 <div id="page-writing" class="page">
   <div class="writing-breadcrumb">
     <button class="btn-back" onclick="navigate('sections')">← Back</button>
@@ -1633,7 +1703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="writing-task-container"></div>
 </div>
 
-<!-- ===== PAGE: SPEAKING ===== -->
+<!-- ==================== PAGE: SPEAKING ==================== -->
 <div id="page-speaking" class="page">
   <div class="speaking-breadcrumb">
     <button class="btn-back" onclick="navigate('sections')">← Back</button>
@@ -1644,7 +1714,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="speaking-task-container"></div>
 </div>
 
-<!-- ===== PAGE: LISTENING ===== -->
+<!-- ==================== PAGE: LISTENING ==================== -->
 <div id="page-listening" class="page">
   <div class="listening-breadcrumb">
     <button class="btn-back" onclick="navigate('sections')">← Back</button>
@@ -1658,7 +1728,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
   Practice material adapted from official IELTS General Training sample tasks.
 </footer>
-    <script>
+
+<script>
 /* ==================================================
    NAVIGATION
    ================================================== */
@@ -1689,45 +1760,67 @@ function navigate(to, sub){
    READING DATA (8 tasks from PDF)
    ================================================== */
 const READING_TASKS = [
-  { id:'flow-chart', label:'Flow-chart Completion',
-    title:'The Production Process', subject:'ROBOTS AT WORK',
+  {
+    id:'flow-chart',
+    label:'Flow-chart Completion',
+    title:'The Production Process',
+    subject:'ROBOTS AT WORK',
     instructions:'Complete the flow-chart below. Choose NO MORE THAN THREE WORDS from the text for each answer.',
-    passage:[ /* 7 paragraphs from PDF */ ],
+    passage:[
+      `<span class="section-label">A</span> The newspaper production process has come a long way from the old days when the paper was written, edited, typeset and ultimately printed in one building with the journalists working on the upper floors and the printing presses going on the ground floor. These days the editor, subeditors and journalists who put the paper together are likely to find themselves in a totally different building or maybe even in a different city. This is the situation which now prevails in Sydney. The daily paper is compiled at the editorial headquarters, known as the prepress centre, in the heart of the city, but printed far away in the suburbs at the printing centre. Here human beings are in the minority as much of the work is done by automated machines controlled by computers.`,
+      `<span class="section-label">B</span> Once the finished newspaper has been created for the next morning's edition, all the pages are transmitted electronically from the prepress centre to the printing centre. The system of transmission is an update on the sophisticated page facsimile system already in use on many other newspapers. An imagesetter at the printing centre delivers the pages as film. Each page takes less than a minute to produce, although for colour pages four versions, once each for black, cyan, magenta and yellow are sent. The pages are then processed into photographic negatives and the film is used to produce aluminium printing plates ready for the presses.`,
+      `<span class="section-label">C</span> A procession of automated vehicles is busy at the new printing centre where the Sydney Morning Herald is printed each day. With lights flashing and warning horns honking, the robots (to give them their correct name, the LGVs or laser guided vehicles) look for all the world like enthusiastic machines from a science fiction movie, as they follow their own random paths around the plant busily getting on with their jobs. Automation of this kind is now standard in all modern newspaper plants. The robots can detect unauthorised personnel and alert security staff immediately if they find an "intruder"; not surprisingly, tall tales are already being told about the machines starting to take on personalities of their own.`,
+      `<span class="section-label">D</span> The robots' principal job, however, is to shift the newsprint (the printing paper) that arrives at the plant in huge reels and emerges at the other end some time later as newspapers. Once the size of the day's paper and the publishing order are determined at head office, the information is punched into the computer and the LGVs are programmed to go about their work. The LGVs collect the appropriate size paper reels and take them where they have to go. When the press needs another reel its computer alerts the LGV system. The Sydney LGVs move busily around the press room fulfilling their two key functions: to collect reels of newsprint either from the reel stripping stations, or from the racked supplies in the newsprint storage area. At the stripping station the tough wrapping that helps to protect a reel of paper from rough handling is removed. Any damaged paper is peeled off and the reel is then weighed.`,
+      `<span class="section-label">E</span> Then one of the four paster robots moves in. Specifically designed for the job, it trims the paper neatly and prepares the reel for the press. If required the reel can be loaded directly onto the press; if not needed immediately, an LGV takes it to the storage area. When the press computer calls for a reel, an LGV takes it to the reel loading area of the presses. It lifts the reel into the loading position and places it in the correct spot with complete accuracy. As each reel is used up, the press drops the heavy cardboard core into a waste bin. When the bin is full, another LGV collects it and deposits the cores into a shredder for recycling.`,
+      `<span class="section-label">F</span> The LGVs move at walking speed. Should anyone step in front of one or get too close, sensors stop the vehicle until the path is clear. The company has chosen a laserguide function system for the vehicles because, as the project development manager says, "The beauty of it is that if you want to change the routes, you can work out a new route on your computer and lay it down for them to follow". When an LGV's batteries run low, it will take itself off line and go to the nearest battery maintenance point for replacement batteries. And all this is achieved with absolute minimum human	input and a much reduced risk of injury to people working in the printing centres.`,
+      `<span class="section-label">G</span> The question newspaper workers must now ask, however, is, "how long will it be before the robots are writing the newspapers as well as running the printing centre, churning out the latest edition every morning?"`
+    ],
     questions:[
-      {num:33, prompt:'The final version of the text is ……………… to the printing centre.', type:'text', answers:['transmitted'], explanation:'...'},
-      {num:34, prompt:'The pages are converted into ………………', type:'text', answers:['film','negative','photographic film','photographic negative','film / negative'], explanation:'...'},
-      {num:35, prompt:'……………… are made for use in the printing presses.', type:'text', answers:['aluminium printing plates','printing plates','aluminium plates'], explanation:'...'},
-      {num:36, prompt:'The LGVs are ……………… by computer.', type:'text', answers:['programmed'], explanation:'...'},
-      {num:37, prompt:'The LGVs remove the ……………… from the reel.', type:'text', answers:['damaged paper','wrapping','damaged paper / wrapping'], explanation:'...'},
-      {num:38, prompt:'The reel is ………………', type:'text', answers:['weighed'], explanation:'...'},
-      {num:39, prompt:'The reel is trimmed and prepared by the ………………', type:'text', answers:['paster robot','paster robots'], explanation:'...'},
-      {num:40, prompt:'The reel is taken to the ………………', type:'text', answers:['storage area'], explanation:'...'}
-    ]},
-  { id:'identifying-information', label:'Identifying Information',
-    title:'London to Brighton Bike Ride', subject:'Event rules & safety information',
+      {num:33, prompt:'The final version of the text is ……………… to the printing centre.', type:'text', answers:['transmitted'], explanation:'Paragraph B: "all the pages are transmitted electronically from the prepress centre to the printing centre." (electronically is optional)'},
+      {num:34, prompt:'The pages are converted into ………………', type:'text', answers:['film','negative','photographic film','photographic negative','film / negative'], explanation:'Paragraph B: "delivers the pages as film" → "processed into photographic negatives". Both "film" and "photographic negatives" are accepted.'},
+      {num:35, prompt:'……………… are made for use in the printing presses.', type:'text', answers:['aluminium printing plates','printing plates','aluminium plates'], explanation:'Paragraph B ends with "produce aluminium printing plates ready for the presses."'},
+      {num:36, prompt:'The LGVs are ……………… by computer.', type:'text', answers:['programmed'], explanation:'Paragraph D: "the information is punched into the computer and the LGVs are programmed to go about their work."'},
+      {num:37, prompt:'The LGVs remove the ……………… from the reel.', type:'text', answers:['damaged paper','wrapping','damaged paper / wrapping'], explanation:'Paragraph D: "the tough wrapping that helps to protect a reel of paper... is removed. Any damaged paper is peeled off." Both accepted.'},
+      {num:38, prompt:'The reel is ………………', type:'text', answers:['weighed'], explanation:'Paragraph D: "the reel is then weighed."'},
+      {num:39, prompt:'The reel is trimmed and prepared by the ………………', type:'text', answers:['paster robot','paster robots'], explanation:'Paragraph E: "Then one of the four paster robots moves in... it trims the paper neatly and prepares the reel".'},
+      {num:40, prompt:'The reel is taken to the ………………', type:'text', answers:['storage area'], explanation:'Paragraph E: "if not needed immediately, an LGV takes it to the storage area."'}
+    ]
+  },
+  {
+    id:'identifying-information',
+    label:'Identifying Information',
+    title:'London to Brighton Bike Ride',
+    subject:'Event rules & safety information',
     instructions:'Do the following statements agree with the information given in the text? Write TRUE if the statement agrees, FALSE if it contradicts, or NOT GIVEN if there is no information.',
-    passage:[ /* 9 paragraphs from PDF */ ],
+    passage:[
+      `<span class="section-label">The start</span> The bike ride starts at Clapham Common tube station. Your Start Time is indicated by the colour of your body number in this pack. It is also printed on the address label of the envelope. Please arrive no earlier than 30 minutes before that time. We allocate an equal number of cyclists for each Start Time to ensure a steady flow. Please keep to the time you've been given so we can keep to our schedule and avoid delaying other riders and prevent 'bunching' further down the route. An Information Point, toilets and refreshment stands will be open from very early in the day.`,
+      `<span class="section-label">Ride carefully</span> We put together as many facilities as possible to help ensure you have a troublefree day. But we also rely on you to ride safely and with due consideration for other cyclists and road users. Although many roads are closed to oncoming traffic, this is not always the case and you should be aware of the possibility that there could be vehicles coming in the opposite direction. Please do not attempt reckless overtaking whilst riding — remember it is NOT a race.`,
+      `<span class="section-label">Follow all instructions</span> Every effort is made to ensure that the route is well signed and marshalled. Please obey all directions from police and marshals on the route. If you hear a motorcycle marshal blow his/her whistle three times, move left.`,
+      `<span class="section-label">Wear a helmet</span> Every year we are delighted to see more riders wearing protective helmets, but we would like to see every cyclist on the ride wearing one. More than half of reported injuries in cycling accidents are to the head, and a helmet gives the best protection when the head hits the ground.`,
+      `<span class="section-label">Attracting assistance</span> If you have an accident, ask a marshal for help; they are in contact with the support/emergency services. To call for help from our motorcycle marshals, give a 'thumbs down' signal. The marshal will do all he/she can to help, providing he/she is not already going to a more serious accident. If a motorcycle marshal slows down to help you, but you have just stopped for a rest and don't need help, please give a 'thumbs up' signal and he/she will carry on. Remember — thumbs down means 'I need help'.`,
+      `<span class="section-label">In case of breakdown</span> Refer to your route map and make your way to a Mechanics Point. Mechanical assistance is free when you show your Rider Identity Card; you just pay for the parts.`,
+      `<span class="section-label">Refreshment stops</span> Look out for these along the route. Most are organised by voluntary clubs and their prices give you real value for money. They are also raising money for their local communities and the British Heart Foundation, so please give them your support.`,
+      `<span class="section-label">Rain or shine — be prepared</span> In the event of very bad weather, watch out for signs to wet weather stations en route. Good waterproofs, like a cycle cape, are essential. Our first aid staff can only supply bin liners and by the time you get one you may be very wet. However, the English summer is unpredictable — it may also be hot, so don't forget the sun protection cream as well!`,
+      `<span class="section-label">If you have to drop out</span> We will try to pick up your bike for you on the day. Call Bike Events (01225 310859) no more than two weeks after the ride to arrange collection. Sorry, we cannot guarantee this service nor can we accept liability for any loss or damage to your bike. Bike Events will hold your bike for three months, after which it may be disposed of. You will be charged for all costs incurred in returning your cycle.`
+    ],
     questions:[
-      {num:1, prompt:'You should not arrive more than half an hour before your allocated starting time.', type:'select-tgn', answer:'TRUE', explanation:'...'},
-      {num:2, prompt:'Your Rider Identity Card will be sent to you before the event.', type:'select-tgn', answer:'NOT GIVEN', explanation:'...'},
-      {num:3, prompt:'Some roads may have normal traffic flow on them.', type:'select-tgn', answer:'TRUE', explanation:'...'},
-      {num:4, prompt:'Helmets are compulsory for all participants.', type:'select-tgn', answer:'FALSE', explanation:'...'},
-      {num:5, prompt:'Refreshments are free to all participants during the ride.', type:'select-tgn', answer:'FALSE', explanation:'...'},
-      {num:6, prompt:'If you need a rest you must get off the road.', type:'select-tgn', answer:'NOT GIVEN', explanation:'...'},
-      {num:7, prompt:'First aid staff can provide cycle capes.', type:'select-tgn', answer:'FALSE', explanation:'...'},
-      {num:8, prompt:'Bike Events will charge you for the return of your bike.', type:'select-tgn', answer:'TRUE', explanation:'...'}
-    ]},
-  { id:'matching-information', label:'Matching Information',
-    title:'Language School Advertisements', subject:'Five language school advertisements (A–E)',
+      {num:1, prompt:'You should not arrive more than half an hour before your allocated starting time.', type:'select-tgn', answer:'TRUE', explanation:'Paragraph "The start": "Please arrive no earlier than 30 minutes before that time." — half an hour = 30 minutes. Statement agrees.'},
+      {num:2, prompt:'Your Rider Identity Card will be sent to you before the event.', type:'select-tgn', answer:'NOT GIVEN', explanation:'The text mentions the Rider Identity Card in the context of breakdown assistance but never says when or how you receive it.'},
+      {num:3, prompt:'Some roads may have normal traffic flow on them.', type:'select-tgn', answer:'TRUE', explanation:'Paragraph "Ride carefully": "Although many roads are closed to oncoming traffic, this is not always the case" — some roads still have traffic.'},
+      {num:4, prompt:'Helmets are compulsory for all participants.', type:'select-tgn', answer:'FALSE', explanation:'Paragraph "Wear a helmet" says they would "like to see every cyclist... wearing one" — a desire, not a rule. The statement contradicts the text.'},
+      {num:5, prompt:'Refreshments are free to all participants during the ride.', type:'select-tgn', answer:'FALSE', explanation:'Paragraph "Refreshment stops" says stands have prices and "give you real value for money" — not free. Contradicts.'},
+      {num:6, prompt:'If you need a rest you must get off the road.', type:'select-tgn', answer:'NOT GIVEN', explanation:'The text mentions stopping for a rest but does not say where you must do it or whether you must leave the road.'},
+      {num:7, prompt:'First aid staff can provide cycle capes.', type:'select-tgn', answer:'FALSE', explanation:'Paragraph "Rain or shine": "Our first aid staff can only supply bin liners" — explicitly NOT cycle capes. Contradicts.'},
+      {num:8, prompt:'Bike Events will charge you for the return of your bike.', type:'select-tgn', answer:'TRUE', explanation:'Paragraph "If you have to drop out": "You will be charged for all costs incurred in returning your cycle."'}
+    ]
+  },
+  {
+    id:'matching-information',
+    label:'Matching Information',
+    title:'Language School Advertisements',
+    subject:'Five language school advertisements (A–E)',
     instructions:'Look at the five advertisements A–E. Which advertisement mentions the following? Write the correct letter A–E. You may use any letter more than once.',
     showAds:true,
-    ads:[
-      {code:'A', name:'International Language Centre', text:'Mandarin, Cantonese, Thai, Vietnamese, Korean, Indonesian, English, Spanish, Italian, German, Russian. FULL AND PART-TIME COURSES. 5 Bligh Street, Sth. Sydney, 2000. Tel: 295 4561.'},
-      {code:'B', name:'Global Language Learning Centre', text:'LATEST METHODS. Business, Hospitality or Travel. FULL AND PART-TIME COURSES. 5 Bligh Street, Sth. Sydney, 2000. Tel: 295 4561, Fax: 235 4714. Phone for Appointment: 938 0977.'},
-      {code:'C', name:'Perth TAFE International', text:'Perth, Western Australia. Mediterranean climate, lovely Indian Ocean beaches, multicultural society. Government owned TAFE Colleges. Intensive English Courses: 5 intakes per year, 10 week modules, $2000 AUD per 10 weeks. Study Tours Available: English/cultural/tourism. Contact: TAFE International, Level 5, 1 Mill Street, Perth 6000. Tel: 619 320 3777.'},
-      {code:'D', name:'Club Français', text:'SUMMER COURSES January 2005. Adults Crash Course 9-19 Jan (Intensive 3-4 hrs/day, $250, Beginners and Low Intermediate only). Adults Normal Course 9 Jan-4 March (10 levels, 2 hrs morning or evening, twice a week or Saturday 9am-1.30pm, $278). High School Crash Course 11-25 Jan (Intensive 3 hrs/day, 1pm-4pm, Years 8-12, $200). French. 27 Claire St, Sydney. Phone: 227 1746.'},
-      {code:'E', name:'University of Canberra — TESOL Centre', text:'Learn English in Australia\'s National Capital. The TESOL Centre has more than 24 years\' experience in providing quality language programs for overseas students. Test preparation, possibility of further academic study. Access to University facilities. Classes conducted on campus with opportunity to mix with Australian students.'}
-    ],
     questions:[
       {num:1, prompt:'up-to-date teaching systems', type:'select-letter', letters:['A','B','C','D','E'], answer:'B', explanation:'Ad B (Global Language Learning Centre) mentions "LATEST METHODS" — up-to-date teaching systems.'},
       {num:2, prompt:'that the institution has been established for a significant time', type:'select-letter', letters:['A','B','C','D','E'], answer:'E', explanation:'Ad E (University of Canberra) states "The TESOL Centre has more than 24 years\' experience" — established for a significant time.'},
@@ -1737,82 +1830,132 @@ const READING_TASKS = [
       {num:6, prompt:'language teaching for special purposes', type:'select-letter', letters:['A','B','C','D','E'], answer:'B', explanation:'Ad B (Global Language Learning Centre) lists "BUSINESS, HOSPITALITY OR TRAVEL" — special-purpose language teaching.'},
       {num:7, prompt:'a wide variety of language choices', type:'select-letter', letters:['A','B','C','D','E'], answer:'A', explanation:'Ad A (International Language Centre) lists 11 languages — the widest variety.'},
       {num:8, prompt:'evening classes', type:'select-letter', letters:['A','B','C','D','E'], answer:'C', explanation:'Ad C (Perth) mentions courses "morning or evening" and Saturday — includes evening classes.'}
-    ]},
-  { id:'matching-features', label:'Matching Features',
-    title:'History of Cinema', subject:'National cinemas in the silent period',
+    ],
+    ads:[
+      {code:'A', name:'International Language Centre', text:'Mandarin, Cantonese, Thai, Vietnamese, Korean, Indonesian, English, Spanish, Italian, German, Russian. FULL AND PART-TIME COURSES. 5 Bligh Street, Sth. Sydney, 2000. Tel: 295 4561.'},
+      {code:'B', name:'Global Language Learning Centre', text:'LATEST METHODS. Business, Hospitality or Travel. FULL AND PART-TIME COURSES. 5 Bligh Street, Sth. Sydney, 2000. Tel: 295 4561, Fax: 235 4714. Phone for Appointment: 938 0977.'},
+      {code:'C', name:'Perth TAFE International', text:'Perth, Western Australia. Mediterranean climate, lovely Indian Ocean beaches, multicultural society. Government owned TAFE Colleges. Intensive English Courses: 5 intakes per year, 10 week modules, $2000 AUD per 10 weeks. Study Tours Available: English/cultural/tourism. Contact: TAFE International, Level 5, 1 Mill Street, Perth 6000. Tel: 619 320 3777.'},
+      {code:'D', name:'Club Français', text:'SUMMER COURSES January 2005. Adults Crash Course 9-19 Jan (Intensive 3-4 hrs/day, $250, Beginners and Low Intermediate only). Adults Normal Course 9 Jan-4 March (10 levels, 2 hrs morning or evening, twice a week or Saturday 9am-1.30pm, $278). High School Crash Course 11-25 Jan (Intensive 3 hrs/day, 1pm-4pm, Years 8-12, $200). French. 27 Claire St, Sydney. Phone: 227 1746.'},
+      {code:'E', name:'University of Canberra — TESOL Centre', text:'Learn English in Australia\'s National Capital. The TESOL Centre has more than 24 years\' experience in providing quality language programs for overseas students. Test preparation, possibility of further academic study. Access to University facilities. Classes conducted on campus with opportunity to mix with Australian students.'}
+    ]
+  },
+  {
+    id:'matching-features',
+    label:'Matching Features',
+    title:'History of Cinema',
+    subject:'National cinemas in the silent period',
     instructions:'Look at the following statements (Questions 34-40) and the list of countries below. Match each statement with the correct country A–J. You may use any letter more than once.',
     showCountries:true,
-    countries:[
-      {code:'A', name:'France'},{code:'B', name:'Germany'},{code:'C', name:'USA'},{code:'D', name:'Denmark'},
-      {code:'E', name:'Sweden'},{code:'F', name:'Japan'},{code:'G', name:'Russia'},{code:'H', name:'Italy'},
-      {code:'I', name:'Britain'},{code:'J', name:'China'}
-    ],
     questions:[
-      {num:34, prompt:'It helped other countries develop their own film industry.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'A', explanation:'...'},
-      {num:35, prompt:'It was the biggest producer of films.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'C', explanation:'...'},
-      {num:36, prompt:'It was first to develop the \'feature\' film.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'H', explanation:'...'},
-      {num:37, prompt:'It was responsible for creating stars.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'C', explanation:'...'},
-      {num:38, prompt:'It made the most money from \'avant-garde\' films.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'A', explanation:'...'},
-      {num:39, prompt:'It made movies based more on its own culture than outside influences.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'F', explanation:'...'},
-      {num:40, prompt:'It had a great influence on silent movies, despite its size.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'D', explanation:'...'}
-    ]},
-  { id:'matching-headings', label:'Matching Headings',
-    title:'Robots at Work', subject:'Newspaper production with LGVs',
+      {num:34, prompt:'It helped other countries develop their own film industry.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'A', explanation:'Paragraph 1: "the French... helping to start cinema in China, Japan, Latin America and Russia." France helped other countries.'},
+      {num:35, prompt:'It was the biggest producer of films.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'C', explanation:'Paragraph 2: "the United States that was to become, and remain, the largest single market for films... dominant position on the world market." USA was the biggest.'},
+      {num:36, prompt:'It was first to develop the \'feature\' film.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'H', explanation:'Paragraph 2: "The Italian industry, which had pioneered the feature film with spectacular films like \'Quo Vadis?\' (1913) and \'Cabiria\' (1914)." Italy pioneered the feature film.'},
+      {num:37, prompt:'It was responsible for creating stars.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'C', explanation:'Paragraph 3: "the star system added a new dimension to screen acting" — discussing Hollywood\'s star system. USA created the star system.'},
+      {num:38, prompt:'It made the most money from \'avant-garde\' films.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'A', explanation:'Paragraph 4: "the avant-garde film first achieved commercial success, this time thanks almost exclusively to the French." France was the main force behind avant-garde commercial success.'},
+      {num:39, prompt:'It made movies based more on its own culture than outside influences.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'F', explanation:'Paragraph 6: "Japan, where a cinema developed based primarily on traditional theatrical and, to a lesser extent, other art forms and only gradually adapted to western influence." Japan based cinema on its own culture.'},
+      {num:40, prompt:'It had a great influence on silent movies, despite its size.', type:'select-letter', letters:['A','B','C','D','E','F','G','H','I','J'], answer:'D', explanation:'Paragraph 6: "the Scandinavian countries, particularly Denmark, which played a role in the development of silent cinema quite out of proportion to their small population." Denmark had influence disproportionate to size.'}
+    ],
+    countries:[
+      {code:'A', name:'France'},
+      {code:'B', name:'Germany'},
+      {code:'C', name:'USA'},
+      {code:'D', name:'Denmark'},
+      {code:'E', name:'Sweden'},
+      {code:'F', name:'Japan'},
+      {code:'G', name:'Russia'},
+      {code:'H', name:'Italy'},
+      {code:'I', name:'Britain'},
+      {code:'J', name:'China'}
+    ]
+  },
+  {
+    id:'matching-headings',
+    label:'Matching Headings',
+    title:'Robots at Work',
+    subject:'Newspaper production with LGVs',
     instructions:'The text has seven paragraphs A–G. Choose the correct heading for paragraphs A, B and D–G from the list below. Write the correct number i–ix. Paragraph C is given as an example (ix).',
     showHeadings:true,
     example:{letter:'C', num:null, answer:'ix'},
+    questions:[
+      {num:27, prompt:'Paragraph A', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'v', explanation:'Paragraph A describes how newspaper production is now split between the prepress centre in the city and the printing centre in the suburbs — "Split location for newspaper production" (v).'},
+      {num:28, prompt:'Paragraph B', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'vii', explanation:'Paragraph B describes electronic transmission of pages from the prepress centre to the printing centre — "Getting the newspaper to the printing centre" (vii).'},
+      {num:29, prompt:'Paragraph D', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'iv', explanation:'Paragraph D focuses on the principal job of the LGVs: collecting and moving newsprint reels — "The LGVs\' main functions" (iv).'},
+      {num:30, prompt:'Paragraph E', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'i', explanation:'Paragraph E describes the paster robots and how LGVs work together in the process — "Robots working together" (i).'},
+      {num:31, prompt:'Paragraph F', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'viii', explanation:'Paragraph F describes how the LGVs are controlled: sensors, laserguide routing, battery management — "Controlling the robots" (viii).'},
+      {num:32, prompt:'Paragraph G', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'iii', explanation:'Paragraph G ends with a forward-looking question about robots writing newspapers — "Looking ahead" (iii).'}
+    ],
     headings:[
-      {code:'i', text:'Robots working together'},{code:'ii', text:'Preparing LGVs for takeover'},{code:'iii', text:'Looking ahead'},
-      {code:'iv', text:'The LGVs\' main functions'},{code:'v', text:'Split location for newspaper production'},
-      {code:'vi', text:'Newspapers superseded by technology'},{code:'vii', text:'Getting the newspaper to the printing centre'},
-      {code:'viii', text:'Controlling the robots'},{code:'ix', text:'Beware of robots!'}
+      {code:'i', text:'Robots working together'},
+      {code:'ii', text:'Preparing LGVs for takeover'},
+      {code:'iii', text:'Looking ahead'},
+      {code:'iv', text:'The LGVs\' main functions'},
+      {code:'v', text:'Split location for newspaper production'},
+      {code:'vi', text:'Newspapers superseded by technology'},
+      {code:'vii', text:'Getting the newspaper to the printing centre'},
+      {code:'viii', text:'Controlling the robots'},
+      {code:'ix', text:'Beware of robots!'}
+    ]
+  },
+  {
+    id:'multiple-choice',
+    label:'Multiple Choice',
+    title:'The Coal Industry and the Environment',
+    subject:'Coal mining, greenhouse gases, and environmental impact',
+    instructions:'Choose the correct letter A, B, C or D for Questions 1–5. For Question 6, choose the most suitable title for the text.',
+    passage:[
+      `Greenhouse gases arise from a wide range of sources and their increasing concentration is largely related to the compound effects of increased population, improved living standards and changes in lifestyle. From a current base of 5 billion, the United Nations predicts that the global population may stabilise in the twenty-first century between 8 and 14 billion, with more than 90 per cent of the projected increase taking place in the world's developing nations. The associated activities to support that growth, particularly to produce the required energy and food, will cause further increases in greenhouse gas emissions. The challenge, therefore, is to attain a sustainable balance between population, economic growth and the environment.`,
+      `The major greenhouse gas emissions from human activities are carbon dioxide (CO2), methane and nitrous oxide. Chlorofluorocarbons (CFCs) are the only major contributor to the greenhouse effect that does not occur naturally, coming from such sources as refrigeration, plastics and manufacture. Coal's total contribution to greenhouse gas emissions is thought to be about 18 per cent, with about half of this coming from electricity generation.`,
+      `The worldwide coal industry allocates extensive resources to researching and developing new technologies and ways of capturing greenhouse gases. Efficiencies are likely to be improved dramatically, and hence CO2 emissions reduced, through combustion and gasification techniques which are now at pilot and demonstration stages.`,
+      `Clean coal is another avenue for improving fuel conversion efficiency. Investigations are under way into super-clean coal (35 per cent ash) and ultraclean coal (less than 1 per cent ash). Super-clean coal has the potential to enhance the combustion efficiency of conventional pulverised fuel power plants. Ultraclean coal will enable coal to be used in advanced power systems such as coal-fired gas turbines which, when operated in combined cycle, have the potential to achieve much greater efficiencies.`,
+      `Defendants of mining point out that, environmentally, coal mining has two important factors in its favour. It makes only temporary use of the land and produces no toxic chemical wastes. By carefully preplanning projects, implementing pollution control measures, monitoring the effects of mining and rehabilitating mined areas, the coal industry minimises the impact on the neighbouring community, the immediate environment and long-term land capability. Dust levels are controlled by spraying roads and stockpiles, and water pollution is controlled by carefully separating clean water runoff from runoff which contains sediments or salt from mine workings. The latter is treated and reused for dust suppression. Noise is controlled by modifying equipment and by using insulation and sound enclosures around machinery.`,
+      `Since mining activities represent only a temporary use of the land, extensive rehabilitation measures are adopted to ensure that land capability after mining meets agreed and appropriate standards which, in some cases, are superior to the land's pre-mining condition. Where the mining is underground, the surface area can be simultaneously used for forests, cattle grazing and crop raising, or even reservoirs and urban development, with little or no disruption to the existing land use. In all cases, mining is subject to stringent controls and approvals processes.`
     ],
     questions:[
-      {num:27, prompt:'Paragraph A', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'v', explanation:'...'},
-      {num:28, prompt:'Paragraph B', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'vii', explanation:'...'},
-      {num:29, prompt:'Paragraph D', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'iv', explanation:'...'},
-      {num:30, prompt:'Paragraph E', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'i', explanation:'...'},
-      {num:31, prompt:'Paragraph F', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'viii', explanation:'...'},
-      {num:32, prompt:'Paragraph G', type:'select-letter', letters:['i','ii','iii','iv','v','vi','vii','viii','ix'], answer:'iii', explanation:'...'}
-    ]},
-  { id:'multiple-choice', label:'Multiple Choice',
-    title:'The Coal Industry and the Environment', subject:'Coal mining, greenhouse gases, and environmental impact',
-    instructions:'Choose the correct letter A, B, C or D for Questions 1–5. For Question 6, choose the most suitable title for the text.',
-    passage:[ /* 6 paragraphs from PDF */ ],
-    questions:[
-      {num:1, prompt:'The global increase in greenhouse gases has been attributed to', type:'radio',
-        options:[['A','industrial pollution in developing countries.'],['B','coal mining and electricity generation.'],['C','reduced rainfall in many parts of the world.'],['D','trends in population and lifestyle.']], answer:'D', explanation:'...'},
-      {num:2, prompt:'The proportion of all greenhouse gases created by coal is approximately', type:'radio',
-        options:[['A','14 per cent.'],['B','18 per cent.'],['C','27 per cent.'],['D','90 per cent.']], answer:'B', explanation:'...'},
-      {num:3, prompt:'Current research aims to increase the energy-producing efficiency of coal by', type:'radio',
-        options:[['A','burning it at a lower temperature.'],['B','developing new gasification techniques.'],['C','extracting CO2 from it.'],['D','recycling greenhouse gases.']], answer:'B', explanation:'...'},
-      {num:4, prompt:'Compared with ordinary coal, new, \'clean\' coals may generate power', type:'radio',
-        options:[['A','more cleanly and more efficiently.'],['B','more cleanly but less efficiently.'],['C','more cleanly but at higher cost.'],['D','more cleanly but much more slowly.']], answer:'A', explanation:'...'},
-      {num:5, prompt:'To control dust at mine sites, mining companies often use', type:'radio',
-        options:[['A','chemicals which may be toxic.'],['B','topsoil taken from the site before mining.'],['C','fresh water from nearby dams.'],['D','runoff water containing sediments.']], answer:'D', explanation:'...'},
-      {num:6, prompt:'Which is the most suitable title for the text?', type:'radio',
-        options:[['A','Pollution control in coal mining.'],['B','The greenhouse effect.'],['C','The coal industry and the environment.'],['D','Sustainable population growth.']], answer:'C', explanation:'...'}
-    ]},
-  { id:'sentence-completion', label:'Sentence Completion',
-    title:'Bee Behaviour — Von Frisch\'s Discoveries', subject:'Karl von Frisch\'s experiments on bee communication',
+      {num:1, prompt:'The global increase in greenhouse gases has been attributed to', type:'radio', options:[['A','industrial pollution in developing countries.'],['B','coal mining and electricity generation.'],['C','reduced rainfall in many parts of the world.'],['D','trends in population and lifestyle.']], answer:'D', explanation:'Paragraph 1: "increasing concentration is largely related to the compound effects of increased population, improved living standards and changes in lifestyle."'},
+      {num:2, prompt:'The proportion of all greenhouse gases created by coal is approximately', type:'radio', options:[['A','14 per cent.'],['B','18 per cent.'],['C','27 per cent.'],['D','90 per cent.']], answer:'B', explanation:'Paragraph 2: "Coal\'s total contribution to greenhouse gas emissions is thought to be about 18 per cent."'},
+      {num:3, prompt:'Current research aims to increase the energy-producing efficiency of coal by', type:'radio', options:[['A','burning it at a lower temperature.'],['B','developing new gasification techniques.'],['C','extracting CO2 from it.'],['D','recycling greenhouse gases.']], answer:'B', explanation:'Paragraph 3: "Efficiencies are likely to be improved dramatically... through combustion and gasification techniques which are now at pilot and demonstration stages."'},
+      {num:4, prompt:'Compared with ordinary coal, new, \'clean\' coals may generate power', type:'radio', options:[['A','more cleanly and more efficiently.'],['B','more cleanly but less efficiently.'],['C','more cleanly but at higher cost.'],['D','more cleanly but much more slowly.']], answer:'A', explanation:'Paragraph 4: super-clean coal "has the potential to enhance the combustion efficiency" and ultraclean enables "much greater efficiencies." Cleaner AND more efficient.'},
+      {num:5, prompt:'To control dust at mine sites, mining companies often use', type:'radio', options:[['A','chemicals which may be toxic.'],['B','topsoil taken from the site before mining.'],['C','fresh water from nearby dams.'],['D','runoff water containing sediments.']], answer:'D', explanation:'Paragraph 5: "water pollution is controlled by carefully separating clean water runoff from runoff which contains sediments or salt... The latter is treated and reused for dust suppression."'},
+      {num:6, prompt:'Which is the most suitable title for the text?', type:'radio', options:[['A','Pollution control in coal mining.'],['B','The greenhouse effect.'],['C','The coal industry and the environment.'],['D','Sustainable population growth.']], answer:'C', explanation:'The text covers both the environmental impact of coal (greenhouse gases) AND the industry\'s environmental management (clean coal, dust/water/noise control, land rehabilitation). "The coal industry and the environment" is the most comprehensive title.'}
+    ]
+  },
+  {
+    id:'sentence-completion',
+    label:'Sentence Completion',
+    title:'Bee Behaviour — Von Frisch\'s Discoveries',
+    subject:'Karl von Frisch\'s experiments on bee communication',
     instructions:'Complete the sentences below. Choose NO MORE THAN TWO WORDS from the text for each answer.',
-    passage:[ /* 5 paragraphs from PDF */ ],
+    passage:[
+      `At first, von Frisch thought the bees were responding only to the scent of the food. But what did the third dance mean? And if bees were responding only to the scent, how could they also 'sniff down' food hundreds of metres away from the hive, food which was sometimes downwind? On a hunch, he started gradually moving the feeding dish further and further away and noticed as he did so that the dances of the returning scout bees also started changing. If he placed the feeding dish over nine metres away, the second type of dance, the sickle version, came into play. But once he moved it past 36 metres, the scouts would then start dancing the third, quite different, waggle dance.`,
+      `The measurement of the actual distance too, he concluded, was precise. For example, a feeding dish 300 metres away was indicated by 15 complete runs through the pattern in 30 seconds. When the dish was moved to 60 metres away, the number dropped to eleven.`,
+      `Von Frisch noted something further. When the scout bees came home to tell their sisters about the food source, sometimes they would dance outside on the horizontal entrance platform of the hive, and sometimes on the vertical wall inside. And, depending on where they danced, the straight portion of the waggle dance would point in different directions. The outside dance was fairly easy to decode: the straight portion of the dance pointed directly to the food source, so the bees would merely have to decode the distance message and fly off in that direction to find their food.`,
+      `But by studying the dance on the inner wall of the hive, von Frisch discovered a remarkable method which the dancer used to tell her sisters the direction of the food in relation to the sun. When inside the hive, the dancer cannot use the sun, so she uses gravity instead. The direction of the sun is represented by the top of the hive wall. If she runs straight up, this means that the feeding place is in the same direction as the sun. However, if, for example, the feeding place is 40° to the left of the sun, then the dancer would run 40° to the left of the vertical line. This was to be the first of von Frisch's remarkable discoveries. Soon he would also discover a number of other remarkable facts about how bees communicate and, in doing so, revolutionise the study of animal behaviour generally.`,
+      `Hive — a 'house' for bees; the place where they build a nest and live.`
+    ],
     questions:[
-      {num:38, prompt:'Von Frisch discovered the difference between dance types by changing the position of the …………………………', type:'text', answers:['feeding dish'], explanation:'...'},
-      {num:39, prompt:'The dance outside the hive points in the direction of the …………………………', type:'text', answers:['food','food source'], explanation:'...'},
-      {num:40, prompt:'The angle of the dance from the vertical shows the angle of the food from the …………………………', type:'text', answers:['sun'], explanation:'...'}
-    ]},
-  { id:'short-answer', label:'Short-answer Questions',
-    title:'Fancy Foods Product Return', subject:'Product recall notice and reward offer',
+      {num:38, prompt:'Von Frisch discovered the difference between dance types by changing the position of the …………………………', type:'text', answers:['feeding dish'], explanation:'Paragraph 1: "he started gradually moving the feeding dish further and further away and noticed... the dances of the returning scout bees also started changing."'},
+      {num:39, prompt:'The dance outside the hive points in the direction of the …………………………', type:'text', answers:['food','food source'], explanation:'Paragraph 3: "the straight portion of the dance pointed directly to the food source."'},
+      {num:40, prompt:'The angle of the dance from the vertical shows the angle of the food from the …………………………', type:'text', answers:['sun'], explanation:'Paragraph 4: "von Frisch discovered a remarkable method which the dancer used to tell her sisters the direction of the food in relation to the sun" — and the angle from vertical corresponds to the angle from the sun.'}
+    ]
+  },
+  {
+    id:'short-answer',
+    label:'Short-answer Questions',
+    title:'Fancy Foods Product Return',
+    subject:'Product recall notice and reward offer',
     instructions:'Answer the questions below. Choose NO MORE THAN THREE WORDS AND/OR A NUMBER from the text for each answer.',
-    passage:[ /* 2 paragraphs from PDF */ ],
+    passage:[
+      `IMPORTANT NOTICE: PRODUCT RETURN — Fancy Foods wishes to inform the public that pieces of metal have been found in some jars of Fancy Foods Chicken Curry (Spicy). The batches of the jars involved have numbers from J6617 to J6624. The batch number is printed on the bottom of each jar. If you have any jars with these batch numbers, please return them (preferably unopened) to the supermarket where you purchased them. You can also return them to the factory (Fancy Foods Retailers, Blacktown). Fancy Foods will pay $10 for each jar returned unopened and $5 for each jar already opened. No payment will be made for empty jars, which do not need to be returned. However, the Retailing Manager will be interested to hear from people who have consumed chicken curry from any of the above batch numbers. In particular, it will be helpful if they can give information about the place of purchase of the product. Jars of Fancy Foods Chicken Curry (Coconut) and Fancy Foods Chicken Curry (Mango) have not been affected and do not need to be returned.`,
+      `REWARD — Fancy Foods will pay a reward of $10,000 to $50,000 for information which leads to the conviction of any person found guilty of placing metal pieces in its products. If you have such information, please contact the Customer Relations Manager, Fancy Foods Retailers, Blacktown.`
+    ],
     questions:[
-      {num:4, prompt:'What has been found in some Fancy Foods products?', type:'text', answers:['pieces of metal'], explanation:'...'},
-      {num:5, prompt:'Where can you find the batch number on the jars?', type:'text', answers:['on the bottom','bottom'], explanation:'...'},
-      {num:6, prompt:'How much will you receive for an opened jar of contaminated Chicken Curry?', type:'text', answers:['$5','5 dollars','five dollars'], explanation:'...'},
-      {num:7, prompt:'If you have eaten Chicken Curry from a jar with one of the batch numbers listed, whom should you contact?', type:'text', answers:['Retailing Manager','the Retailing Manager'], explanation:'...'},
-      {num:8, prompt:'What is the maximum reward Fancy Foods is offering for information about who contaminated their product?', type:'text', answers:['$50,000','50,000','50000'], explanation:'...'}
-    ]}
+      {num:4, prompt:'What has been found in some Fancy Foods products?', type:'text', answers:['pieces of metal'], explanation:'Paragraph 1: "pieces of metal have been found in some jars of Fancy Foods Chicken Curry (Spicy)."'},
+      {num:5, prompt:'Where can you find the batch number on the jars?', type:'text', answers:['on the bottom','bottom'], explanation:'Paragraph 1: "The batch number is printed on the bottom of each jar."'},
+      {num:6, prompt:'How much will you receive for an opened jar of contaminated Chicken Curry?', type:'text', answers:['$5','5 dollars','five dollars'], explanation:'Paragraph 1: "Fancy Foods will pay... $5 for each jar already opened."'},
+      {num:7, prompt:'If you have eaten Chicken Curry from a jar with one of the batch numbers listed, whom should you contact?', type:'text', answers:['Retailing Manager','the Retailing Manager'], explanation:'Paragraph 1: "the Retailing Manager will be interested to hear from people who have consumed chicken curry from any of the above batch numbers."'},
+      {num:8, prompt:'What is the maximum reward Fancy Foods is offering for information about who contaminated their product?', type:'text', answers:['$50,000','50,000','50000'], explanation:'Paragraph 2 (REWARD): "a reward of $10,000 to $50,000" — maximum is $50,000.'}
+    ]
+  }
 ];
 
 /* ==================================================
@@ -1824,7 +1967,7 @@ function renderReadingSub(){
   const task = currentSubSection ? READING_TASKS.find(t=>t.id===currentSubSection) : READING_TASKS[0];
   let html = `
     <div class="reading-header">
-      <div class="task-eyebrow" style="...">General Training Reading</div>
+      <div class="task-eyebrow" style="font-family:var(--font-heading);font-size:13px;color:var(--neon);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">General Training Reading</div>
       <h1>${task.title}</h1>
       <div class="reading-accent">${task.subject}</div>
       <p>${task.instructions}</p>
@@ -1834,23 +1977,31 @@ function renderReadingSub(){
         <h2>Passage</h2>`;
   if(task.showAds){
     html += `<div class="ad-grid">`;
-    task.ads.forEach(a=>{ html += `<div class="ad"><span class="code">${a.code}</span><strong>${a.name}</strong>${a.text}</div>`; });
+    task.ads.forEach(a=>{
+      html += `<div class="ad"><span class="code">${a.code}</span><strong>${a.name}</strong>${a.text}</div>`;
+    });
     html += `</div>`;
   }
   if(task.showCountries){
     html += `<div class="countries-grid">`;
-    task.countries.forEach(c=>{ html += `<div class="country-card"><span class="code">${c.code}</span><span class="name">${c.name}</span></div>`; });
+    task.countries.forEach(c=>{
+      html += `<div class="country-card"><span class="code">${c.code}</span><span class="name">${c.name}</span></div>`;
+    });
     html += `</div>`;
   }
   if(task.showHeadings){
     html += `<div class="headings-grid">`;
-    task.headings.forEach(h=>{ html += `<span><span class="heading-letter">${h.code}</span> ${h.text}</span>`; });
+    task.headings.forEach(h=>{
+      html += `<span><span class="heading-letter">${h.code}</span> ${h.text}</span>`;
+    });
     html += `</div>`;
   }
   task.passage.forEach(p=>{ html += `<p>${p}</p>`; });
-  html += `</div>
-    <div class="questions-panel"><h2>Questions</h2><div class="instructions">${task.instructions}</div>`;
-  task.questions.forEach(q=>{ html += renderQRow(q); });
+  html += `</div>`;
+  html += `<div class="questions-panel"><h2>Questions</h2><div class="instructions">${task.instructions}</div>`;
+  task.questions.forEach(q=>{
+    html += renderQRow(q);
+  });
   html += `</div></div>`;
   container.innerHTML = html;
   document.getElementById('btn-check-reading').onclick = ()=>checkReading(task.id);
@@ -1898,8 +2049,11 @@ function checkReading(taskId){
     } else {
       const field = document.getElementById('q-'+q.num);
       userVal = field ? field.value : '';
-      if(q.type==='text'){ ok = q.answers.some(a => norm(a) === norm(userVal)); }
-      else { ok = userVal === q.answer; }
+      if(q.type==='text'){
+        ok = q.answers.some(a => norm(a) === norm(userVal));
+      } else {
+        ok = userVal === q.answer;
+      }
     }
     row.classList.remove('correct','incorrect');
     row.classList.add('checked', ok ? 'correct' : 'incorrect');
@@ -1922,8 +2076,12 @@ function checkReading(taskId){
    WRITING DATA
    ================================================== */
 const WRITING_TASKS = [
-  { id:'task1', label:'Task 1',
-    title:'General Training Writing — Task 1', time:'about 20 minutes', minWords:150,
+  {
+    id:'task1',
+    label:'Task 1',
+    title:'General Training Writing — Task 1',
+    time:'about 20 minutes',
+    minWords:150,
     prompt:'You live in a room in college which you share with another student. However, there are many problems with this arrangement and you find it very difficult to work.',
     instruction:'Write a letter to the accommodation officer at the college. In your letter: • describe the situation • explain your problems and why it is difficult to work • say what kind of accommodation you would prefer. Write at least 150 words. You do NOT need to write any addresses. Begin your letter as follows: Dear Sir or Madam,',
     criteria:[
@@ -1935,9 +2093,14 @@ const WRITING_TASKS = [
     samples:[
       {label:'Sample A', band:'Band 5', comment:'Below the word limit with some repetition of the task rubric. Points not always linked together well and punctuation sometimes faulty. Sentences kept quite simple and mistakes occur when more complex structures are attempted. Introduction appropriate and purpose clear despite problems.'},
       {label:'Sample B', band:'Band 7', comment:'Also short but incorporates original material beyond the rubric. Reads fluently, well organised with good use of conjunctions to link points. Some grammatical errors but these do not greatly affect the reader, and there is evidence of more complex sentence structures.'}
-    ]},
-  { id:'task2', label:'Task 2',
-    title:'General Training Writing — Task 2', time:'about 40 minutes', minWords:250,
+    ]
+  },
+  {
+    id:'task2',
+    label:'Task 2',
+    title:'General Training Writing — Task 2',
+    time:'about 40 minutes',
+    minWords:250,
     prompt:'In Britain, when someone gets old they often go to live in a home with other old people where there are nurses to look after them. Sometimes the government has to pay for this care. Who do you think should pay for this care, the government or the family?',
     instruction:'Give reasons for your answer and include any relevant examples from your own knowledge or experience. Write at least 250 words.',
     criteria:[
@@ -1949,15 +2112,19 @@ const WRITING_TASKS = [
     samples:[
       {label:'Sample A', band:'Band 5', comment:'Quite a lot of relevant ideas but not always well supported and sometimes unclear. Organisation becomes weak in places and the reader finds the message difficult to follow. A lot of mistakes, and some parts — such as the conclusion — are very hard to follow because of these errors. Appropriate vocabulary is present but sentence control is very weak.'},
       {label:'Sample B', band:'Band 8', comment:'Very well organised script containing a lot of well-supported arguments and analyses the topic from different angles. Ideas follow each other well and there is a very honest conclusion. Easy to read. Some areas where expression is clumsy but this makes little difference to the overall flow. Minor errors in spelling and structure.'}
-    ]}
+    ]
+  }
 ];
 
 function renderWritingSub(){
   const container = document.getElementById('writing-task-container');
   const task = currentSubSection ? WRITING_TASKS.find(t=>t.id===currentSubSection) : WRITING_TASKS[0];
   let criteriaHtml = `<div class="writing-criteria">`;
-  task.criteria.forEach(c=>{ criteriaHtml += `<div class="criteria-card"><h3>${c.name}</h3><p>${c.text}</p></div>`; });
+  task.criteria.forEach(c=>{
+    criteriaHtml += `<div class="criteria-card"><h3>${c.name}</h3><p>${c.text}</p></div>`;
+  });
   criteriaHtml += `</div>`;
+
   let samplesHtml = '';
   task.samples.forEach(s=>{
     samplesHtml += `<div class="sample-card">
@@ -1965,9 +2132,10 @@ function renderWritingSub(){
       <div class="sample-comment"><strong>${s.label}:</strong> ${s.comment}</div>
     </div>`;
   });
+
   container.innerHTML = `
     <div class="writing-header">
-      <div class="task-eyebrow" style="...">General Training Writing</div>
+      <div class="task-eyebrow" style="font-family:var(--font-heading);font-size:13px;color:var(--neon);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">General Training Writing</div>
       <h1>${task.title}</h1>
       <div class="writing-accent">${task.label}</div>
       <p>Write your response below, then check word count and paragraph structure. Compare with real candidate scripts and assessment criteria.</p>
@@ -1990,11 +2158,17 @@ function renderWritingSub(){
           <div class="check-row" id="reg-check"></div>
         </div>
         ${criteriaHtml}
-        <details class="writing-samples"><summary>Assessment criteria for this task</summary></details>
-        <details class="writing-samples"><summary>Compare with real candidate scripts</summary>${samplesHtml}</details>
+        <details class="writing-samples">
+          <summary>Assessment criteria for this task</summary>
+        </details>
+        <details class="writing-samples">
+          <summary>Compare with real candidate scripts</summary>
+          ${samplesHtml}
+        </details>
       </div>
     </div>
   `;
+
   const essay = document.getElementById('essay-text');
   const wc = document.getElementById('wc-display');
   essay.addEventListener('input', ()=>{
@@ -2016,10 +2190,12 @@ function checkWriting(taskId){
   const essay = document.getElementById('essay-text').value;
   const words = countWords(essay);
   const paragraphs = essay.split(/\n\s*\n/).filter(p=>p.trim().length>0).length;
+
   const wcOk = words >= task.minWords;
   const paraOk = paragraphs >= 3;
   const hasOpening = task.id==='task1' ? /dear sir or madam/i.test(essay) : true;
   const regOk = hasOpening;
+
   document.getElementById('wc-check').innerHTML = `<span class="dot ${wcOk?'ok':'warn'}"></span> ${words} words written — ${wcOk ? `meets the ${task.minWords}-word minimum.` : `below the ${task.minWords}-word minimum required by the task.`}`;
   document.getElementById('para-check').innerHTML = `<span class="dot ${paraOk?'ok':'warn'}"></span> ${paragraphs} paragraph${paragraphs===1?'':'s'} — ${paraOk ? 'clear paragraph structure supports Coherence and Cohesion.' : 'consider organising into distinct paragraphs (introduction, body, conclusion).'}`;
   if(task.id==='task1'){
@@ -2034,8 +2210,11 @@ function checkWriting(taskId){
    SPEAKING DATA
    ================================================== */
 const SPEAKING_TASKS = [
-  { id:'part1', label:'Part 1',
-    title:'Speaking — Part 1: Introduction and Interview', time:'4–5 minutes',
+  {
+    id:'part1',
+    label:'Part 1',
+    title:'Speaking — Part 1: Introduction and Interview',
+    time:'4–5 minutes',
     description:'The examiner introduces themselves, checks identification, and asks general questions about familiar topics. This part lasts 4–5 minutes.',
     transcript:[
       {role:'Examiner', text:'Now, in this first part, I\'d like to ask you some more questions about yourself, OK? Let\'s talk about your home town or village.'},
@@ -2061,13 +2240,22 @@ const SPEAKING_TASKS = [
       'How long have you lived there?',
       'What do you like about living there?',
       'What sort of accommodation would you most like to live in?'
-    ]},
-  { id:'part2', label:'Part 2',
-    title:'Speaking — Part 2: Individual Long Turn', time:'3–4 minutes (1 min preparation + 1–2 min speaking)',
+    ]
+  },
+  {
+    id:'part2',
+    label:'Part 2',
+    title:'Speaking — Part 2: Individual Long Turn',
+    time:'3–4 minutes (1 min preparation + 1–2 min speaking)',
     description:'The examiner gives you a task card with a topic. You have one minute to prepare and make notes, then you speak for 1–2 minutes. The examiner may ask one or two rounding-off questions.',
     taskCard:{
       topic:'Describe something you own which is very important to you.',
-      points:['where you got it from','how long you have had it','what you use it for','and explain why it is important to you.']
+      points:[
+        'where you got it from',
+        'how long you have had it',
+        'what you use it for',
+        'and explain why it is important to you.'
+      ]
     },
     transcript:[
       {role:'Examiner', text:'Alright? Remember you have one to two minutes for this, so don\'t worry if I stop you. I\'ll tell you when the time is up.'},
@@ -2077,10 +2265,16 @@ const SPEAKING_TASKS = [
       {role:'Examiner', text:'Thank you. Would it be easy to replace this, this piano?'},
       {role:'Candidate', text:'Yes, I think it wouldn\'t be that big problem but I like my piano as it is because I have it from my parents, it\'s some kind unique for me.'}
     ],
-    roundingOff:['Is it valuable in terms of money?','Would it be easy to replace?']
+    roundingOff:[
+      'Is it valuable in terms of money?',
+      'Would it be easy to replace?'
+    ]
   },
-  { id:'part3', label:'Part 3',
-    title:'Speaking — Part 3: Two-way Discussion', time:'4–5 minutes',
+  {
+    id:'part3',
+    label:'Part 3',
+    title:'Speaking — Part 3: Two-way Discussion',
+    time:'4–5 minutes',
     description:'The examiner invites you to discuss more abstract and general questions related to the Part 2 topic. This part lasts 4–5 minutes and tests your ability to express and justify opinions, analyse, and speculate.',
     transcript:[
       {role:'Examiner', text:'We\'ve been talking about things we own. I\'d like to discuss with you one or two more general questions relating to this topic. First, let\'s consider values and the way they can change.'},
@@ -2103,7 +2297,8 @@ const SPEAKING_TASKS = [
       'Have things changed since your parents\' time?',
       'Do you think advertising influences what people buy?',
       'Do you think this will change in the future — will cars and designer clothes still be status symbols?'
-    ]}
+    ]
+  }
 ];
 
 /* ==================================================
@@ -2133,9 +2328,10 @@ function renderSpeakingSub(){
   const container = document.getElementById('speaking-task-container');
   const task = currentSubSection ? SPEAKING_TASKS.find(t=>t.id===currentSubSection) : SPEAKING_TASKS[0];
   speakingState.taskId = task.id;
+
   let html = `
     <div class="speaking-header">
-      <div class="task-eyebrow" style="...">Speaking</div>
+      <div class="task-eyebrow" style="font-family:var(--font-heading);font-size:13px;color:var(--neon);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Speaking</div>
       <h1>${task.title}</h1>
       <div class="speaking-accent">${task.label}</div>
       <p>${task.description} ${task.time ? 'You should spend '+task.time+' on this part.' : ''}</p>
@@ -2166,6 +2362,7 @@ function renderSpeakingSub(){
       </div>
     </div>
   `;
+
   container.innerHTML = html;
   initWaveAnimation();
   setupRecordingButtons(task.id);
@@ -2244,8 +2441,10 @@ async function setupRecordingButtons(taskId){
       const stream = await navigator.mediaDevices.getUserMedia({audio:true});
       speakingState.audioChunks = [];
       speakingState.startTime = Date.now();
+
       const recorder = new MediaRecorder(stream, {mimeType: MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus' : 'audio/webm'});
       speakingState.mediaRecorder = recorder;
+
       recorder.ondataavailable = (e)=>{ if(e.data.size>0) speakingState.audioChunks.push(e.data); };
       recorder.onstop = ()=>{
         speakingState.audioBlob = new Blob(speakingState.audioChunks, {type:'audio/webm;codecs=opus'});
@@ -2259,6 +2458,7 @@ async function setupRecordingButtons(taskId){
         stopStream(stream);
         processSpeech();
       };
+
       recorder.start();
       speakingState.recording = true;
       status.textContent = 'Recording... speak your answer now';
@@ -2274,6 +2474,7 @@ async function setupRecordingButtons(taskId){
       console.error('Mic error:', err);
     }
   };
+
   stopBtn.onclick = ()=>{
     if(speakingState.mediaRecorder && speakingState.mediaRecorder.state !== 'inactive'){
       speakingState.mediaRecorder.stop();
@@ -2290,7 +2491,9 @@ function startWaveAnimation(){
   let activeIdx = 0;
   const interval = setInterval(()=>{
     if(!speakingState.recording){ clearInterval(interval); return; }
-    bars.forEach((b,i)=>{ b.classList.toggle('active', i===activeIdx); });
+    bars.forEach((b,i)=>{
+      b.classList.toggle('active', i===activeIdx);
+    });
     activeIdx = (activeIdx+1) % bars.length;
   }, 120);
 }
@@ -2298,9 +2501,11 @@ function startWaveAnimation(){
 async function processSpeech(){
   const feedback = document.getElementById('ai-feedback');
   feedback.classList.add('show');
+
   const audioDuration = (speakingState.stopTime - speakingState.startTime) / 1000;
   let transcript = '';
 
+  // Try Web Speech API recognition
   if('SpeechRecognition' in window || 'webkitSpeechRecognition' in window){
     try {
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -2309,11 +2514,17 @@ async function processSpeech(){
       recognition.interimResults = false;
       recognition.continuous = false;
 
+      // Create a blob URL for the audio and try to use it
       const audioUrl = URL.createObjectURL(speakingState.audioBlob);
       const audio = new Audio(audioUrl);
 
-      // SpeechRecognition doesn't directly accept audio files in all browsers
-      // Fall back to simulated transcription based on audio duration
+      // SpeechRecognition doesn't directly accept audio files in all browsers.
+      // Fall back to using the audio duration and a simulated transcript
+      // based on word counting from a text input if recognition isn't supported for files.
+
+      // For now: estimate based on audio duration and provide a form for manual text input
+      // as fallback.
+
       transcript = await simulateTranscriptionFromAudio(audioDuration);
       speakingState.transcript = transcript;
     } catch(e){
@@ -2327,19 +2538,31 @@ async function processSpeech(){
     speakingState.transcript = transcript;
   }
 
+  // Analyze
   const analysis = analyzeSpeech(speakingState.transcript, audioDuration);
   renderAIFeedback(analysis, audioDuration);
 }
 
 async function simulateTranscriptionFromAudio(duration){
+  // Simulate transcription: create a realistic candidate-like response
+  // based on the duration and typical speaking rate (120-150 wpm)
   const wordsPerMinute = 130;
   const estimatedWords = Math.round((duration / 60) * wordsPerMinute);
+
+  // Get the task questions to generate context-appropriate text
   const task = SPEAKING_TASKS.find(t=>t.id===speakingState.taskId);
   let sampleText = '';
-  if(task.id === 'part1'){ sampleText = generatePart1Response(task.questions, estimatedWords); }
-  else if(task.id === 'part2'){ sampleText = generatePart2Response(task, estimatedWords); }
-  else if(task.id === 'part3'){ sampleText = generatePart3Response(task.questions, estimatedWords); }
-  else { sampleText = `This is my response. I think that... ${' '.repeat(estimatedWords)}`; }
+
+  if(task.id === 'part1'){
+    sampleText = generatePart1Response(task.questions, estimatedWords);
+  } else if(task.id === 'part2'){
+    sampleText = generatePart2Response(task, estimatedWords);
+  } else if(task.id === 'part3'){
+    sampleText = generatePart3Response(task.questions, estimatedWords);
+  } else {
+    sampleText = `This is my response. I think that... ${' '.repeat(estimatedWords)}`;
+  }
+
   return sampleText;
 }
 
@@ -2349,6 +2572,7 @@ function generatePart1Response(questions, wordCount){
     "I live in a small apartment in the city centre, which is quite convenient because I can walk to work and there are plenty of shops and restaurants nearby. I've been living there for about three years now, ever since I started my current job. What I like most about it is the location — it's really central and well-connected by public transport. The only thing I don't like is that it's a bit noisy, especially during the weekend when there are a lot of people on the streets. Ideally, I'd like to live in a slightly bigger place, maybe a small house with a garden, somewhere a bit quieter but still close to the city.",
     "I think the most interesting thing about my town is the cultural diversity. You can find people from all over the country and even from different countries living there. This is reflected in the food, the festivals, and the general atmosphere. There are several international restaurants, a few cultural centres, and during the summer there's a big street festival that really brings everyone together. It makes life here very interesting and I never get bored."
   ];
+  // Select or combine responses to match word count
   let result = '';
   while(result.split(/\s+/).length < wordCount && result.length < 600){
     const resp = responses[Math.floor(Math.random()*responses.length)];
@@ -2389,6 +2613,7 @@ function generatePart3Response(questions, wordCount){
 }
 
 async function getManualTranscript(){
+  // Show a modal/text input for manual transcript entry
   const task = SPEAKING_TASKS.find(t=>t.id===speakingState.taskId);
   const prompt = task.id==='part1' ? 'Type what you said (or a sample response):' :
                   task.id==='part2' ? 'Type your Part 2 response (what you said about the topic):' :
@@ -2397,6 +2622,7 @@ async function getManualTranscript(){
   return new Promise((resolve)=>{
     const existing = document.getElementById('manual-transcript-modal');
     if(existing) existing.remove();
+
     const modal = document.createElement('div');
     modal.id = 'manual-transcript-modal';
     modal.style.cssText = `
@@ -2415,6 +2641,7 @@ async function getManualTranscript(){
       </div>
     `;
     document.body.appendChild(modal);
+
     document.getElementById('modal-cancel').onclick = ()=>{
       modal.remove();
       resolve('');
@@ -2433,17 +2660,30 @@ function analyzeSpeech(transcript, duration){
   const wordRate = duration > 0 ? words / duration : 0;
   const uniqueWords = transcript.trim() ? new Set(transcript.trim().toLowerCase().split(/\s+/).filter(w=>w.length>0)).size : 0;
   const lexicalDiversity = words > 0 ? uniqueWords / words : 0;
+
+  // Sentence analysis
   const sentences = transcript.split(/[.!?]+/).filter(s=>s.trim().length>0);
   const avgSentenceLength = sentences.length > 0 ? words / sentences.length : 0;
   const clauses = transcript.split(/,|;|(?<=\.)\s+/).filter(c=>c.trim().length>0).length;
   const complexRatio = sentences.length > 0 ? clauses / sentences.length : 0;
+
+  // Filler words detection
   const fillers = ['um','uh','like','you know','actually','basically','i mean','sort of','kind of'];
   const fillerCount = fillers.reduce((sum,f)=> sum + (transcript.toLowerCase().match(new RegExp('\\b'+f+'\\b','g')) || []).length, 0);
   const fillerRatio = words > 0 ? fillerCount / words : 0;
+
+  // Reasoning: map metrics to band scores
   return {
-    words, wordRate, duration, uniqueWords, lexicalDiversity,
-    sentences: sentences.length, avgSentenceLength, complexRatio,
-    fillerCount, fillerRatio,
+    words,
+    wordRate,
+    duration,
+    uniqueWords,
+    lexicalDiversity,
+    sentences: sentences.length,
+    avgSentenceLength,
+    complexRatio,
+    fillerCount,
+    fillerRatio,
     bands: calculateBands({words, wordRate, uniqueWords, lexicalDiversity, sentences: sentences.length, avgSentenceLength, complexRatio, fillerCount, fillerRatio, duration})
   };
 }
@@ -2451,6 +2691,7 @@ function analyzeSpeech(transcript, duration){
 function calculateBands(metrics){
   const {words, wordRate, uniqueWords, lexicalDiversity, sentences, avgSentenceLength, complexRatio, fillerCount, fillerRatio, duration} = metrics;
 
+  // Fluency & Coherence: based on word rate, filler ratio, length of response
   let fluency = 5.0;
   if(duration >= 60 && wordRate >= 100){ fluency = 7.0; }
   else if(duration >= 60 && wordRate >= 70){ fluency = 6.5; }
@@ -2460,6 +2701,7 @@ function calculateBands(metrics){
   if(duration < 30 && words < 50) fluency -= 0.5;
   fluency = clamp(fluency, 1, 9);
 
+  // Lexical Resource: based on lexical diversity, unique words, vocabulary range
   let lexical = 5.0;
   if(lexicalDiversity > 0.6) lexical = 7.5;
   else if(lexicalDiversity > 0.5) lexical = 7.0;
@@ -2470,6 +2712,7 @@ function calculateBands(metrics){
   if(uniqueWords < 30) lexical -= 0.5;
   lexical = clamp(lexical, 1, 9);
 
+  // Grammatical Range & Accuracy: based on sentence complexity, avg sentence length
   let grammar = 5.0;
   if(complexRatio > 2.5) grammar = 7.5;
   else if(complexRatio > 2.0) grammar = 7.0;
@@ -2480,7 +2723,9 @@ function calculateBands(metrics){
   if(sentences > 10) grammar += 0.5;
   grammar = clamp(grammar, 1, 9);
 
+  // Pronunciation: we can't assess directly without audio features, so base on overall impression
   let pronunciation = 5.5;
+  // Use duration and word count as proxy for confidence
   if(duration >= 60 && words >= 100) pronunciation = 6.5;
   if(duration >= 60 && words >= 150) pronunciation = 7.0;
   if(fillerRatio < 0.03) pronunciation += 0.5;
@@ -2500,12 +2745,15 @@ function clamp(v, min, max){ return Math.max(min, Math.min(max, v)); }
 function renderAIFeedback(bands, duration){
   const overall = Math.round(((bands.fluency + bands.lexical + bands.grammar + bands.pronunciation) / 4) * 10) / 10;
   const feedback = document.getElementById('ai-feedback');
+
+  // Descriptors for each band level
   const descriptors = {
     fluency: getDescriptor('Fluency and Coherence', bands.fluency),
     lexical: getDescriptor('Lexical Resource', bands.lexical),
     grammar: getDescriptor('Grammatical Range and Accuracy', bands.grammar),
     pronunciation: getDescriptor('Pronunciation', bands.pronunciation)
   };
+
   feedback.innerHTML = `
     <div class="ai-band">Overall Band <span class="band-num">${overall.toFixed(1)}</span></div>
     <div class="ai-label">Estimated IELTS Speaking score — AI assessment</div>
@@ -2583,6 +2831,7 @@ function generateComment(type, band, ...metrics){
       fillers: metrics[1] > 0.08 ? ' Frequent use of filler words may also affect the overall impression of your pronunciation and fluency.' : ''
     }
   };
+
   const c = comments[type];
   let result = '';
   if(type === 'fluency') result = c.high + c.filler + c.short;
@@ -2597,16 +2846,57 @@ function generateComment(type, band, ...metrics){
    ================================================== */
 const LISTENING_TASKS = [
   {
-    id:'form-completion', label:'Task 1 — Form Completion',
-    title:'IELTS Listening — Form Completion', subject:'Packham\'s Shipping Agency — Customer Quotation Form',
+    id:'form-completion',
+    label:'Task 1 — Form Completion',
+    title:'IELTS Listening — Form Completion',
+    subject:'Packham\'s Shipping Agency — Customer Quotation Form',
     instructions:'Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.',
     recordingName:'IELTS Listening Recording 1 — Jacob Mkere shipping a container to Kenya',
     audioSrc:'/c/Users/mnaza/OneDrive/Рабочий стол/claude code/слушание/слушание 1/113200_Sample_Task_Type_1_Recording.mp3',
     audioUrl:'file:///C:/Users/mnaza/OneDrive/Рабочий%20стол/claude%20code/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5%201/113200_Sample_Task_Type_1_Recording.mp3',
     showTapescript:true,
-    tapescript:[ /* 36 lines of tapescript from PDF */ ],
+    tapescript:[
+      {speaker:'A', text:'Good morning Packham\'s Shipping Agents. Can I help you?'},
+      {speaker:'B', text:'Oh yes, I\'m ringing to make enquiries about sending a large box, a container, back home to Kenya from the UK.'},
+      {speaker:'A', text:'Yes, of course. Would you like me to try and find some quotations for you?'},
+      {speaker:'B', text:'Yes, that\'d be great. Thank you.'},
+      {speaker:'A', text:'Well first of all, I need a few details from you.'},
+      {speaker:'B', text:'Fine.'},
+      {speaker:'A', text:'Can I take your name?'},
+      {speaker:'B', text:'It\'s Jacob Mkere.'},
+      {speaker:'A', text:'Can you spell your surname, please?'},
+      {speaker:'B', text:'Yes, it\'s M-K-E-R-E.'},
+      {speaker:'A', text:'Is that "M" for mother?'},
+      {speaker:'B', text:'Yes.'},
+      {speaker:'A', text:'Thank you, and you say that you will be sending the box to Kenya?'},
+      {speaker:'B', text:'That\'s right.'},
+      {speaker:'A', text:'And where would you like the box picked up from?'},
+      {speaker:'B', text:'From college, if possible.'},
+      {speaker:'A', text:'Yes, of course. I\'ll take down the address now.'},
+      {speaker:'B', text:'It\'s Westall College.'},
+      {speaker:'A', text:'Is that W-E-S-T-A-L-L?'},
+      {speaker:'B', text:'Yes, ... college.'},
+      {speaker:'A', text:'Westall College. And where\'s that?'},
+      {speaker:'B', text:'It\'s Downlands Road, in Bristol.'},
+      {speaker:'A', text:'Oh yes, I know it. And the postcode?'},
+      {speaker:'B', text:'It\'s BS8 9PU.'},
+      {speaker:'A', text:'Right ... and I need to know the size.'},
+      {speaker:'B', text:'Yes, I\'ve measured it carefully and it\'s 1.5m long ...'},
+      {speaker:'A', text:'Right.'},
+      {speaker:'B', text:'0.75m wide ...'},
+      {speaker:'A', text:'OK.'},
+      {speaker:'B', text:'And it\'s 0.5m high or deep.'},
+      {speaker:'A', text:'Great. So I\'ll calculate the volume in a moment and get some quotes for that. But first can you tell me, you know, very generally, what will be in the box?'},
+      {speaker:'B', text:'Yes there\'s mostly clothes.'},
+      {speaker:'A', text:'OK. [writing down]'},
+      {speaker:'B', text:'And there\'s some books.'},
+      {speaker:'A', text:'OK. Good. Um ... Anything else?'},
+      {speaker:'B', text:'Yes, there\'s also some toys.'},
+      {speaker:'A', text:'OK and what is the total value, do you think, of the contents?'},
+      {speaker:'B', text:'Well the main costs are the clothes and the books — they\'ll be about £1500 but then the toys are about another two hundred — so I\'d put down £1700.'}
+    ],
     questions:[
-      {num:1, prompt:'Name: Jacob ………………………', type:'text', answers:['Mkere'], explanation:'The customer spells his surname "M-K-E-R-E" — "Mkere".'},
+      {num:1, prompt:'Name: Jacob ………………………', type:'text', answers:['Mkere'], explanation:'The customer spells his surname "M-K-E-R-E" → "Mkere".'},
       {num:2, prompt:'Address to be collected from: ……………………… College, Downlands Rd', type:'text', answers:['Westall'], explanation:'The customer says "It\'s Westall College".'},
       {num:3, prompt:'Postcode: ………………………', type:'text', answers:['BS8 9PU'], explanation:'The postcode is "BS8 9PU".'},
       {num:4, prompt:'Width: ………………………', type:'text', answers:['0.75 m','0.75m','0.75 metres','0.75 meters','three-quarter','three-quarters','75 cm','75cm'], explanation:'Width is 0.75m (three-quarters of a metre / 75 cm).'},
@@ -2617,44 +2907,88 @@ const LISTENING_TASKS = [
     ]
   },
   {
-    id:'matching', label:'Task 2 — Matching',
-    title:'IELTS Listening — Matching (Example 1)', subject:'Communication Studies — Optional courses for next semester',
+    id:'matching',
+    label:'Task 2 — Matching',
+    title:'IELTS Listening — Matching (Example 1)',
+    subject:'Communication Studies — Optional courses for next semester',
     instructions:'What does Jack tell his tutor about each of the following course options? A He\'ll definitely do it. B He may or may not do it. C He won\'t do it. Write the correct letter, A, B or C next to questions 21-25. You may choose any letter more than once.',
     recordingName:'IELTS Listening Recording 2 — Communication Studies options (no audio recording provided)',
-    audioSrc:null, audioUrl:null,
+    audioSrc:null,
+    audioUrl:null,
     showTapescript:true,
-    tapescript:[ /* 18 lines of tapescript from PDF */ ],
+    tapescript:[
+      {speaker:'Dr Ray', text:'Come in. Oh hello Alan. Have a seat.'},
+      {speaker:'Jack', text:'Right ... you said you wanted to see me to talk about your options next semester?'},
+      {speaker:'Dr Ray', text:'Yes, but the choice depends on your major to some extent. You\'re majoring in Communication Studies, aren\'t you?'},
+      {speaker:'Jack', text:'That\'s right. We have to decide by the end of next week. Really, I\'d like to do all five options but we have to choose two, don\'t we.'},
+      {speaker:'Dr Ray', text:'So for example the Media Studies Option will cover quite a lot of the same area you did in the core module on mass communications this semester — the development of the media through the last two centuries, in relation to political and social issues.'},
+      {speaker:'Jack', text:'Well that was interesting, but I\'ve decided I\'d rather do something completely new.'},
+      {speaker:'Dr Ray', text:'There\'s a Women\'s Studies option, isn\'t there? "Women and Power" — again it has a historical focus, it aims to contextualise women\'s studies by looking at the legal and social situation in the nineteenth and early twentieth centuries ...'},
+      {speaker:'Jack', text:'So it would be useful if I intended to specialise in women\'s studies ... but I\'m not sure I do actually.'},
+      {speaker:'Dr Ray', text:'Well, it might still be useful to give you an idea of the issues involved. It\'s taught by Dr Steed.'},
+      {speaker:'Jack', text:'Oh, really? I\'ll sign up for that, then.'},
+      {speaker:'Dr Ray', text:'What about the option on Culture and Society? That addresses the historical debate on the place of culture since the Industrial Revolution in Britain.'},
+      {speaker:'Jack', text:'So a historical focus again ...'},
+      {speaker:'Dr Ray', text:'Do I get the message you\'re not so keen on history?'},
+      {speaker:'Jack', text:'Well, it\'s just we seem to have done quite a lot this semester ... anyway I\'ll think about that one.'},
+      {speaker:'Dr Ray', text:'If you\'re interested in a course focusing on current issues there\'s the option on Identity and Popular Culture — that approaches the subject through things like contemporary film, adverts, soap operas and so on.'},
+      {speaker:'Jack', text:'Oh? That sounds interesting. Can you tell me who runs it?'},
+      {speaker:'Dr Ray', text:'Well, it\'s normally Dr Stevens but he\'s on sabbatical next semester, so I\'m not sure who\'ll be running it. It should be decided by next week though.'},
+      {speaker:'Jack', text:'Right, well I might wait until then to decide ...'},
+      {speaker:'Dr Ray', text:'And the last option is Introduction to Cultural Theory, isn\'t it. I\'m quite interested in that too — I was talking to one of the second year students, and she said it was really useful, it made a lot of things fall into place.'},
+      {speaker:'Jack', text:'Yes, but in fact in your major, you\'ll have covered a lot of that already in Communications 102, so that might be less useful than some of the others.'},
+      {speaker:'Dr Ray', text:'Oh, I\'ll forget about that one, then.'}
+    ],
     questions:[
-      {num:21, prompt:'Media Studies', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'C', explanation:'Jack says Media Studies "will cover quite a lot of the same area you did in the core module" and then says "I\'ve decided I\'d rather do something completely new" — so he won\'t do it. Answer: C.'},
-      {num:22, prompt:'Women and Power', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'A', explanation:'Jack says "Oh, really? I\'ll sign up for that, then" — he definitely will do it. Answer: A.'},
-      {num:23, prompt:'Culture and Society', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'B', explanation:'Jack says "So a historical focus again ... anyway I\'ll think about that one" — he is uncertain. Answer: B (may or may not).'},
-      {num:24, prompt:'Identity and Popular Culture', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'B', explanation:'Jack is interested but says "I might wait until then to decide" about the instructor — so he may or may not do it. Answer: B.'},
+      {num:21, prompt:'Media Studies', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'C', explanation:'Jack says Media Studies "will cover quite a lot of the same area you did in the core module" and then says "I\'ve decided I\'d rather do something completely new" → so he won\'t do it. Answer: C.'},
+      {num:22, prompt:'Women and Power', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'A', explanation:'Jack says "Oh, really? I\'ll sign up for that, then" → he definitely will do it. Answer: A.'},
+      {num:23, prompt:'Culture and Society', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'B', explanation:'Jack says "So a historical focus again ... anyway I\'ll think about that one" → he is uncertain. Answer: B (may or may not).'},
+      {num:24, prompt:'Identity and Popular Culture', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'B', explanation:'Jack is interested but says "I might wait until then to decide" about the instructor → so he may or may not do it. Answer: B.'},
       {num:25, prompt:'Introduction to Cultural Theory', type:'radio', options:[['A','He\'ll definitely do it.'],['B','He may or may not do it.'],['C','He won\'t do it.']], answer:'C', explanation:'Jack says "in your major, you\'ll have covered a lot of that already in Communications 102, so that might be less useful" and "I\'ll forget about that one, then." Answer: C.'}
     ]
   },
   {
-    id:'multiple-choice', label:'Task 3 — Multiple Choice',
-    title:'IELTS Listening — Multiple Choice', subject:'Shipping — Insurance and delivery options',
+    id:'multiple-choice',
+    label:'Task 3 — Multiple Choice',
+    title:'IELTS Listening — Multiple Choice',
+    subject:'Shipping — Insurance and delivery options',
     instructions:'Choose the correct letter, A, B or C for Questions 9 and 10.',
     recordingName:'IELTS Listening Recording 2 — Insurance and delivery (last part of conversation)',
     audioSrc:'/c/Users/mnaza/OneDrive/Рабочий стол/claude code/слушание/слушание 3/113203_Sample_Task_Type_2_Recording.mp3',
     audioUrl:'file:///C:/Users/mnaza/OneDrive/Рабочий%20стол/claude%20code/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5%203/113203_Sample_Task_Type_2_Recording.mp3',
     showTapescript:true,
-    tapescript:[ /* 8 lines of tapescript from PDF */ ],
+    tapescript:[
+      {speaker:'A', text:'OK right. Now obviously insurance is an important thing to consider and our companies are able to offer very good rates in a number of different all-inclusive packages.'},
+      {speaker:'B', text:'Sorry, could you explain a bit more?'},
+      {speaker:'A', text:'Yes, sorry, um. There\'s really three rates according to quality of insurance cover — there\'s the highest comprehensive cover which is Premium rate, then there\'s standard rate and then there\'s economy rate. That one will only cover the cost of the contents second hand.'},
+      {speaker:'B', text:'Oh I\'ve been stung before with economy insurance so I\'ll go for the highest.'},
+      {speaker:'A', text:'Mh\'hm and can I just check would you want home delivery or to a local depot or would you want to pick it up at the nearest port?'},
+      {speaker:'B', text:'The port\'d be fine — I\'ve got transport that end.'},
+      {speaker:'A', text:'Fine and will you be paying by credit card?'},
+      {speaker:'B', text:'Can I pay by cheque?'}
+    ],
     questions:[
-      {num:9, prompt:'Type of insurance chosen', type:'radio', options:[['A','Economy'],['B','Standard'],['C','Premium']], answer:'C', explanation:'The customer says "I\'ve been stung before with economy insurance so I\'ll go for the highest" — the highest comprehensive cover is Premium. Answer: C.'},
+      {num:9, prompt:'Type of insurance chosen', type:'radio', options:[['A','Economy'],['B','Standard'],['C','Premium']], answer:'C', explanation:'The customer says "I\'ve been stung before with economy insurance so I\'ll go for the highest" → the highest comprehensive cover is Premium. Answer: C.'},
       {num:10, prompt:'Customer wants goods delivered to', type:'radio', options:[['A','port'],['B','home'],['C','depot']], answer:'A', explanation:'The customer says "The port\'d be fine — I\'ve got transport that end." Answer: A.'}
     ]
   },
   {
-    id:'short-answer', label:'Task 4 — Short-answer Questions',
-    title:'IELTS Listening — Short-answer Questions', subject:'Making social contacts in the UK — British Council talk',
+    id:'short-answer',
+    label:'Task 4 — Short-answer Questions',
+    title:'IELTS Listening — Short-answer Questions',
+    subject:'Making social contacts in the UK — British Council talk',
     instructions:'Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.',
     recordingName:'IELTS Listening Recording 3 — Talk on social contacts in the UK',
     audioSrc:'/c/Users/mnaza/OneDrive/Рабочий стол/claude code/слушание/слушание 4/113205_Sample_Task_Type_3_Recording.mp3',
     audioUrl:'file:///C:/Users/mnaza/OneDrive/Рабочий%20стол/claude%20code/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5/%D1%81%D0%BB%D1%83%D1%88%D0%B0%D0%BD%D0%B8%D0%B5%204/113205_Sample_Task_Type_3_Recording.mp3',
     showTapescript:true,
-    tapescript:[ /* 5 lines of tapescript from PDF */ ],
+    tapescript:[
+      {speaker:'John Parker', text:'Good evening, and welcome to the British Council. My name is John Parker and I\'ve been asked to talk to you briefly about certain aspects of life in the UK before you actually go there. So I\'m going to talk first about the best ways of making social contacts there.'},
+      {speaker:'John Parker', text:'Now you might be wondering why it should be necessary. After all, we meet people all the time. But when you\'re living in a foreign country it can be more difficult, not just because of the language, but because customs may be different.'},
+      {speaker:'John Parker', text:'If you\'re going to work in the UK you will probably be living in private accommodation, so it won\'t be quite so easy to meet people. But there are still things that you can do to help yourself. First of all, you can get involved in activities in your local community, join a group of some kind.'},
+      {speaker:'John Parker', text:'For example, you\'ll probably find that there are theatre groups who might be looking for actors, set designers and so on, or if you play an instrument you could join music groups in your area. Or if you like the idea of finding out about local history there\'ll be a group for that too. These are just examples.'},
+      {speaker:'John Parker', text:'And the best places to get information about things like this are either the town hall or the public library. Libraries in the UK perform quite a broad range of functions nowadays — they\'re not just confined to lending books, although that\'s their main role of course.'}
+    ],
     questions:[
       {num:11, prompt:'What TWO factors can make social contact in a foreign country difficult? (Write both answers)', type:'text', answers:['language','customs','language customs','customs language','language / customs','customs / language'], explanation:'The speaker says "not just because of the language, but because customs may be different." Both "language" and "customs" are required. Questions 11 and 12 are in either order.'},
       {num:12, prompt:'(Second factor — write both answers)', type:'text', answers:['language','customs','language customs','customs language','language / customs','customs / language'], explanation:'Duplicate question paired with 11 — both answers accepted. The two factors are "language" and "customs" in either order.'},
@@ -2687,7 +3021,7 @@ function renderListeningSub(){
 
   let html = `
     <div class="listening-header">
-      <div class="task-eyebrow" style="...">IELTS Listening</div>
+      <div class="task-eyebrow" style="font-family:var(--font-heading);font-size:13px;color:var(--neon);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">IELTS Listening</div>
       <h1>${task.title}</h1>
       <div class="listening-accent">${task.label}</div>
       <p>${task.instructions}</p>
@@ -2729,8 +3063,14 @@ function renderListeningSub(){
       </div>
     </div>
   `;
+
   container.innerHTML = html;
-  if(task.audioSrc){ setupAudioPlayer(task); }
+
+  // Wire up audio controls if audio present
+  if(task.audioSrc){
+    setupAudioPlayer(task);
+  }
+
   document.getElementById('btn-check-listening').onclick = ()=>checkListening(task.id);
   document.getElementById('listening-score').classList.remove('show');
 }
@@ -2833,6 +3173,7 @@ function setupAudioPlayer(task){
   listeningState.audio = audio;
   listeningState.audioSrc = task.audioSrc;
 
+  // Get duration once loaded
   audio.addEventListener('loadedmetadata', ()=>{
     listeningState.duration = audio.duration;
     timeTotal.textContent = formatTime(audio.duration);
@@ -2879,8 +3220,11 @@ function setupAudioPlayer(task){
     }
   };
 
-  volumeSlider.oninput = (e)=>{ audio.volume = parseFloat(e.target.value); };
+  volumeSlider.oninput = (e)=>{
+    audio.volume = parseFloat(e.target.value);
+  };
 
+  // Click on progress bar to seek
   progressBar.onclick = (e)=>{
     if(audio.duration){
       const rect = progressBar.getBoundingClientRect();
@@ -2889,6 +3233,7 @@ function setupAudioPlayer(task){
     }
   };
 
+  // Reset when task changes
   const observer = new MutationObserver(()=>{
     if(containerIsGone(container)){
       audio.pause();
@@ -2919,3 +3264,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
   navigate('landing');
 });
 </script>
+</body>
+</html>
